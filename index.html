@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portofolio & CV ATS resmi Nazar Putra Hawali, S.Kom. — Admin Gudang & Admin Pelayanan Penyambungan (PT Trica Daya / PLN ULP Bantar Gebang), Lulusan Sistem Informasi Universitas Bani Saleh." />
+  <title>Nazar Putra Hawali, S.Kom. — Portofolio &amp; CV ATS</title>
+
+  <!-- Anti-flash script: default tema dark (Dominan Hitam, Font Kuning, List Biru) -->
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem('nazar-portfolio-theme');
+        var theme = saved || 'dark';
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- Ambient Background Accents -->
+  <div class="ambient-bg" aria-hidden="true">
+    <div class="ambient-orb ambient-orb--1"></div>
+    <div class="ambient-orb ambient-orb--2"></div>
+    <div class="ambient-grid"></div>
+  </div>
+
+  <!-- Header & Navigation -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="#beranda" class="brand" aria-label="Beranda Nazar Putra Hawali">
+        <span class="brand-mark" aria-hidden="true">NPH</span>
+        <span class="brand-text">Nazar Putra<span class="brand-dot">.</span></span>
+      </a>
+
+      <nav class="nav-desktop" aria-label="Navigasi Utama">
+        <ul class="nav-list">
+          <li><a href="#tentang" class="nav-link">Tentang</a></li>
+          <li><a href="#keahlian" class="nav-link">Keahlian</a></li>
+          <li><a href="#sertifikasi" class="nav-link">Sertifikasi</a></li>
+          <li><a href="#karya" class="nav-link">Karya</a></li>
+          <li><a href="#pengalaman" class="nav-link">Pengalaman &amp; CV</a></li>
+          <li><a href="#kontak" class="nav-link">Kontak</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button
+          type="button"
+          class="theme-toggle"
+          id="themeToggle"
+          aria-label="Ubah ke mode terang"
+          title="Ganti Tema (Dark / Light)"
+        >
+          <span class="theme-toggle__track" aria-hidden="true">
+            <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="4"></circle>
+              <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+            </svg>
+            <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </span>
+          <span class="theme-toggle__label" id="themeLabel">Dark</span>
+        </button>
+
+        <a
+          href="assets/docs/CV-ATS-Nazar-Putra-Hawali.pdf"
+          download="CV-ATS-Nazar-Putra-Hawali.pdf"
+          class="btn btn-primary btn-sm hide-mobile"
+        >
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          <span>CV ATS</span>
+        </a>
+
+        <button
+          type="button"
+          class="menu-toggle"
+          id="menuToggle"
+          aria-label="Buka menu navigasi"
+          aria-expanded="false"
+          aria-controls="mobileDrawer"
+        >
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <nav class="mobile-nav" aria-label="Navigasi Seluler">
+      <a href="#tentang" class="mobile-nav__link">Tentang</a>
+      <a href="#keahlian" class="mobile-nav__link">Keahlian</a>
+      <a href="#sertifikasi" class="mobile-nav__link">Sertifikasi</a>
+      <a href="#karya" class="mobile-nav__link">Karya</a>
+      <a href="#pengalaman" class="mobile-nav__link">Pengalaman &amp; CV</a>
+      <a href="#kontak" class="mobile-nav__link">Kontak</a>
+      <a href="assets/docs/CV-ATS-Nazar-Putra-Hawali.pdf" download="CV-ATS-Nazar-Putra-Hawali.pdf" class="btn btn-primary mobile-nav__cta">Download CV ATS (PDF)</a>
+    </nav>
+  </div>
+
+  <main id="beranda">
+    <!-- Hero Section -->
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="availability-pill reveal">
+            <span class="pulse-dot" aria-hidden="true"></span>
+            <span>Admin Gudang &amp; Pelayanan Penyambungan &middot; S1 Sistem Informasi</span>
+          </div>
+
+          <h1 class="hero-title reveal">
+            Nazar Putra Hawali, <span class="serif-italic">S.Kom.</span>
+          </h1>
+
+          <p class="hero-subtitle reveal">
+            Lulusan <strong>Universitas Bani Saleh</strong> dengan pengalaman kerja sejak <strong>2021&ndash;2026</strong> melalui <strong>PT Trica Daya</strong> (mitra kerja/vendor resmi PLN) di <strong>PLN ULP Bantar Gebang</strong>. Terampil mengoperasikan <em>PLN AP2T</em>, <em>MIMS Warehouse</em>, <em>Microsoft Excel</em>, serta bersertifikat <em>Oracle Academy (Database &amp; Java)</em> dan <em>Cisco IT Support</em>.
+          </p>
+
+          <div class="biodata-strip reveal">
+            <div class="biodata-chip">
+              <span class="biodata-label">Tempat, Tgl Lahir</span>
+              <span class="biodata-value">Bekasi, 21 Agustus 2001</span>
+            </div>
+            <div class="biodata-chip">
+              <span class="biodata-label">No. HP / WhatsApp</span>
+              <a href="tel:081386050447" class="biodata-value biodata-link">081386050447</a>
+            </div>
+            <div class="biodata-chip">
+              <span class="biodata-label">Almamater</span>
+              <span class="biodata-value">Universitas Bani Saleh</span>
+            </div>
+          </div>
+
+          <div class="hero-cta reveal">
+            <a
+              href="assets/docs/CV-ATS-Nazar-Putra-Hawali.pdf"
+              download="CV-ATS-Nazar-Putra-Hawali.pdf"
+              class="btn btn-primary"
+            >
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              <span>Download CV ATS (PDF)</span>
+            </a>
+
+            <a href="cv-ats.html" class="btn btn-ghost">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+              </svg>
+              <span>Lihat CV ATS</span>
+            </a>
+
+            <button type="button" class="btn btn-ghost" id="copyPhoneHero" data-phone="081386050447">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              <span>Salin No. HP</span>
+            </button>
+          </div>
+
+          <div class="hero-stats reveal">
+            <div class="stat-item">
+              <span class="stat-value">5+ Thn</span>
+              <span class="stat-label">Pengalaman Kerja</span>
+            </div>
+            <div class="stat-divider" aria-hidden="true"></div>
+            <div class="stat-item">
+              <span class="stat-value">5</span>
+              <span class="stat-label">Sertifikat Resmi</span>
+            </div>
+            <div class="stat-divider" aria-hidden="true"></div>
+            <div class="stat-item">
+              <span class="stat-value">90 / A</span>
+              <span class="stat-label">Skor Office Prof.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Editorial Profile Showcase Card with Real Photo -->
+        <aside class="hero-card-wrap reveal" aria-label="Kartu Profil Nazar Putra Hawali">
+          <div class="profile-card">
+            <div class="profile-card__header">
+              <span class="mono-tag">PROFIL // S.KOM.</span>
+              <span class="location-tag">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                Bekasi, Jawa Barat
+              </span>
+            </div>
+
+            <div class="profile-photo-frame">
+              <img
+                src="assets/images/profile.jpg"
+                alt="Pas foto resmi Nazar Putra Hawali mengenakan jas almamater Universitas Bani Saleh"
+                class="profile-photo"
+              />
+              <span class="photo-badge">Universitas Bani Saleh</span>
+            </div>
+
+            <div class="profile-card__footer">
+              <div>
+                <p class="profile-role">Penempatan Saat Ini</p>
+                <p class="profile-focus">PLN ULP Bantar Gebang &middot; PT Trica Daya</p>
+              </div>
+              <a href="#kontak" class="profile-arrow" aria-label="Hubungi Nazar Putra Hawali">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- About & Biodata Section -->
+    <section class="section section--alt" id="tentang">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">01 / Tentang Saya</span>
+          <h2 class="section-title">Ketelitian operasional &amp; <span class="serif-italic">penguasaan sistem</span> dalam satu profil.</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-narrative reveal">
+            <p class="lead-text">
+              Saya <strong>Nazar Putra Hawali, S.Kom.</strong>, lahir di Bekasi pada <strong>21 Agustus 2001</strong>, lulusan <strong>Universitas Bani Saleh</strong> program studi Sistem Informasi (2026).
+            </p>
+            <p class="body-text">
+              Sejak tahun <strong>2021 hingga saat ini (2026)</strong>, saya dipercaya bertugas melalui <strong>PT Trica Daya</strong> (mitra kerja/vendor resmi PLN) dengan penempatan di <strong>PLN ULP Bantar Gebang</strong> sebagai <em>Admin Gudang &amp; Admin Pelayanan Penyambungan</em>. Selain menguasai aplikasi operasional <strong>PLN AP2T</strong> dan <strong>MIMS Warehouse</strong>, saya memiliki 5 sertifikasi kompetensi di bidang <strong>Database Design, Java, IT Support, dan Microsoft Office (Grade A)</strong>.
+            </p>
+
+            <div class="biodata-box">
+              <div class="biodata-row">
+                <span>Nama Lengkap</span>
+                <strong>Nazar Putra Hawali, S.Kom.</strong>
+              </div>
+              <div class="biodata-row">
+                <span>Tempat / Tgl Lahir</span>
+                <strong>Bekasi, 21 Agustus 2001</strong>
+              </div>
+              <div class="biodata-row">
+                <span>No. HP / WhatsApp</span>
+                <strong><a href="tel:081386050447" class="link-inline">081386050447</a></strong>
+              </div>
+              <div class="biodata-row">
+                <span>Email</span>
+                <strong><a href="mailto:nazarputrahawali2122@gmail.com" class="link-inline">nazarputrahawali2122@gmail.com</a></strong>
+              </div>
+              <div class="biodata-row">
+                <span>Pendidikan</span>
+                <strong>S1 Sistem Informasi — Universitas Bani Saleh (2026)</strong>
+              </div>
+              <div class="biodata-row">
+                <span>Pengalaman Kerja</span>
+                <strong>PT Trica Daya &ndash; PLN ULP Bantar Gebang (2021&ndash;2026)</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-visual reveal">
+            <figure class="grad-card">
+              <img
+                src="assets/images/graduation.jpg"
+                alt="Wisuda Nazar Putra Hawali S.Kom. Universitas Bani Saleh di Bekasi Convention Center"
+                class="grad-photo"
+                loading="lazy"
+              />
+              <figcaption class="grad-caption">
+                <span class="mono-tag">WISUDA // CLASS OF 2026</span>
+                <p>Bachelor of Information System &mdash; Bekasi Convention Center</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section" id="keahlian">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">02 / Keahlian &amp; Kompetensi</span>
+          <h2 class="section-title">Kompetensi kerja lapangan &amp; <span class="serif-italic">keahlian tersertifikasi</span>.</h2>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-group reveal">
+            <div class="skill-group__head">
+              <span class="mono-index">01</span>
+              <h3>Operasional &amp; Administrasi PLN</h3>
+            </div>
+            <p class="skill-group__desc">Pengalaman langsung sejak 2021 mengelola material gudang dan layanan penyambungan pelanggan.</p>
+            <div class="skill-chips">
+              <span class="chip">PLN AP2T</span>
+              <span class="chip">MIMS Warehouse</span>
+              <span class="chip">Admin Gudang &amp; Stok Material</span>
+              <span class="chip">Admin Pelayanan Penyambungan</span>
+              <span class="chip">Manajemen Dokumen &amp; Arsip</span>
+              <span class="chip">Detail-Oriented</span>
+            </div>
+          </div>
+
+          <div class="skill-group reveal">
+            <div class="skill-group__head">
+              <span class="mono-index">02</span>
+              <h3>Microsoft Office &amp; Pengolahan Data</h3>
+            </div>
+            <p class="skill-group__desc">Tersertifikasi Microsoft Partner (Grade A Excellent, rata-rata 90) untuk input dan verifikasi data cepat.</p>
+            <div class="skill-chips">
+              <span class="chip">Microsoft Excel 2016 (90)</span>
+              <span class="chip">Microsoft Word 2016 (87)</span>
+              <span class="chip">Microsoft PowerPoint 2016 (93)</span>
+              <span class="chip">Input &amp; Rekapitulasi Data</span>
+              <span class="chip">Verifikasi Data Operasional</span>
+              <span class="chip">Laporan Berkala Unit</span>
+            </div>
+          </div>
+
+          <div class="skill-group reveal">
+            <div class="skill-group__head">
+              <span class="mono-index">03</span>
+              <h3>Pemrograman, Database &amp; IT Support</h3>
+            </div>
+            <p class="skill-group__desc">Fondasi akademis Sistem Informasi dengan sertifikasi Oracle Academy dan Cisco Networking Academy.</p>
+            <div class="skill-chips">
+              <span class="chip">Database Design (Oracle)</span>
+              <span class="chip">Java Fundamentals</span>
+              <span class="chip">Java Programming (OOP)</span>
+              <span class="chip">IT Support Essentials (Cisco)</span>
+              <span class="chip">Troubleshooting Hardware &amp; OS</span>
+              <span class="chip">HTML5 / CSS3 / SQL</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Official Certifications Section -->
+    <section class="section section--alt" id="sertifikasi">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">03 / Sertifikasi Resmi</span>
+          <h2 class="section-title">Lima sertifikasi dari <span class="serif-italic">lembaga terpercaya</span>.</h2>
+        </div>
+
+        <div class="cert-grid">
+          <article class="cert-card reveal">
+            <div class="cert-top">
+              <span class="cert-issuer">Oracle Academy</span>
+              <span class="cert-date">2026</span>
+            </div>
+            <h3>Database Design</h3>
+            <p class="cert-desc">Sertifikasi perancangan basis data relasional, normalisasi data, Entity Relationship Diagram (ERD), dan struktur data terintegrasi.</p>
+            <div class="cert-meta">
+              <span>Oracle Academy</span>
+              <span>Universitas Bani Saleh</span>
+            </div>
+          </article>
+
+          <article class="cert-card reveal">
+            <div class="cert-top">
+              <span class="cert-issuer">Oracle Academy</span>
+              <span class="cert-date">1 Sep 2026</span>
+            </div>
+            <h3>Java Fundamentals &mdash; English</h3>
+            <p class="cert-desc">Award of Completion untuk penyelesaian seluruh materi dasar pemrograman Java dan konsep Object-Oriented Programming.</p>
+            <div class="cert-meta">
+              <span>No: 2026100105017</span>
+              <span>Universitas Bani Saleh</span>
+            </div>
+          </article>
+
+          <article class="cert-card reveal">
+            <div class="cert-top">
+              <span class="cert-issuer">Oracle Academy</span>
+              <span class="cert-date">5 Sep 2026</span>
+            </div>
+            <h3>Java Programming &mdash; English</h3>
+            <p class="cert-desc">Award of Completion untuk penguasaan implementasi lanjutan Java, struktur data, dan logika aplikasi.</p>
+            <div class="cert-meta">
+              <span>No: 2026100106014</span>
+              <span>Universitas Bani Saleh</span>
+            </div>
+          </article>
+
+          <article class="cert-card reveal">
+            <div class="cert-top">
+              <span class="cert-issuer">Cisco Networking Academy</span>
+              <span class="cert-date">15 Sep 2026</span>
+            </div>
+            <h3>IT Support Essentials</h3>
+            <p class="cert-desc">Sertifikasi dukungan teknis IT, perakitan komputer, sistem operasi, keamanan dasar, dan troubleshooting jaringan.</p>
+            <div class="cert-meta">
+              <span>ID: 6629799e-c733-4dc7-ad22</span>
+              <span>Universitas Bani Saleh</span>
+            </div>
+          </article>
+
+          <article class="cert-card cert-card--wide reveal">
+            <div class="cert-top">
+              <span class="cert-issuer">Ebiz &middot; Microsoft Partner</span>
+              <span class="cert-date">28 Sep 2026</span>
+            </div>
+            <h3>Desktop Application Training (Professional Level) &mdash; Microsoft Office</h3>
+            <p class="cert-desc">Lulus predikat <strong>Grade A (Excellent)</strong> dengan rata-rata nilai <strong>90</strong> (Microsoft Word 2016: <strong>87</strong>, Microsoft Excel 2016: <strong>90</strong>, Microsoft PowerPoint 2016: <strong>93</strong>).</p>
+            <div class="cert-meta">
+              <span>Certificate No: 26DIP00077</span>
+              <span>Mean: 90 &middot; Grade A (Excellent)</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects / Operational Highlights Section -->
+    <section class="section" id="karya">
+      <div class="container">
+        <div class="section-header section-header--row reveal">
+          <div>
+            <span class="section-eyebrow">04 / Karya &amp; Pengalaman Operasional</span>
+            <h2 class="section-title">Penerapan keahlian di dunia <span class="serif-italic">kerja &amp; akademik</span>.</h2>
+          </div>
+
+          <div class="filter-tabs" role="tablist" aria-label="Filter kategori karya">
+            <button type="button" class="filter-btn is-active" data-filter="all" role="tab" aria-selected="true">Semua</button>
+            <button type="button" class="filter-btn" data-filter="pln" role="tab" aria-selected="false">Operasional PLN</button>
+            <button type="button" class="filter-btn" data-filter="java" role="tab" aria-selected="false">Java &amp; Database</button>
+            <button type="button" class="filter-btn" data-filter="support" role="tab" aria-selected="false">IT &amp; Office</button>
+          </div>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid">
+          <!-- Item 1 -->
+          <article class="project-card reveal" data-category="pln support" data-project-id="pln-warehouse">
+            <div class="project-thumb" aria-hidden="true">
+              <div class="mockup-window">
+                <div class="mockup-dots"><span></span><span></span><span></span></div>
+                <div class="mockup-body">
+                  <div class="mockup-chart">
+                    <span style="height: 55%"></span>
+                    <span style="height: 82%"></span>
+                    <span style="height: 68%"></span>
+                    <span style="height: 95%" class="is-accent"></span>
+                    <span style="height: 84%"></span>
+                  </div>
+                  <div class="mockup-lines">
+                    <span class="w-70"></span>
+                    <span class="w-45"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta">
+                <span class="project-cat">MIMS Warehouse &amp; PLN AP2T</span>
+                <span class="project-year">2021&ndash;2026</span>
+              </div>
+              <h3 class="project-title">Administrasi Gudang &amp; Pelayanan Penyambungan PLN</h3>
+              <p class="project-desc">Pengelolaan keluar-masuk stok material lewat MIMS Warehouse dan pemrosesan permohonan pelanggan di PLN AP2T secara akurat.</p>
+              <div class="project-tags">
+                <span>PLN AP2T</span>
+                <span>MIMS Warehouse</span>
+                <span>Excel</span>
+              </div>
+              <button type="button" class="project-link" data-open-project="pln-warehouse">
+                <span>Lihat Detail</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- Item 2 -->
+          <article class="project-card reveal" data-category="java" data-project-id="java-inventory">
+            <div class="project-thumb" aria-hidden="true">
+              <div class="mockup-editorial">
+                <div class="editorial-pill">JAVA &amp; ORACLE DB</div>
+                <div class="editorial-headline"></div>
+                <div class="editorial-cards">
+                  <div></div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta">
+                <span class="project-cat">Java Programming &amp; Database</span>
+                <span class="project-year">2026</span>
+              </div>
+              <h3 class="project-title">Sistem Pencatatan Inventaris Berbasis Java &amp; SQL</h3>
+              <p class="project-desc">Implementasi konsep OOP Java dan desain basis data relasional (Oracle Database Design) untuk validasi stok dan transaksi.</p>
+              <div class="project-tags">
+                <span>Java OOP</span>
+                <span>Database Design</span>
+                <span>SQL</span>
+              </div>
+              <button type="button" class="project-link" data-open-project="java-inventory">
+                <span>Lihat Detail</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- Item 3 -->
+          <article class="project-card reveal" data-category="support" data-project-id="it-helpdesk">
+            <div class="project-thumb" aria-hidden="true">
+              <div class="mockup-lms">
+                <div class="lms-sidebar">
+                  <span></span><span></span><span></span>
+                </div>
+                <div class="lms-main">
+                  <div class="lms-video"></div>
+                  <div class="lms-progress"><div></div></div>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta">
+                <span class="project-cat">IT Support &amp; Helpdesk</span>
+                <span class="project-year">2026</span>
+              </div>
+              <h3 class="project-title">Standarisasi SOP &amp; Troubleshooting IT Support</h3>
+              <p class="project-desc">Alur diagnosis perangkat keras, sistem operasi, jaringan lokal, serta dokumentasi penanganan insiden teknis berbasis standar Cisco.</p>
+              <div class="project-tags">
+                <span>IT Support Essentials</span>
+                <span>Cisco</span>
+                <span>Hardware/OS</span>
+              </div>
+              <button type="button" class="project-link" data-open-project="it-helpdesk">
+                <span>Lihat Detail</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- Item 4 -->
+          <article class="project-card reveal" data-category="pln support" data-project-id="office-reporting">
+            <div class="project-thumb" aria-hidden="true">
+              <div class="mockup-tokens">
+                <div class="token-row">
+                  <span class="swatch s1"></span>
+                  <span class="swatch s2"></span>
+                  <span class="swatch s3"></span>
+                </div>
+                <div class="token-btn">Excel (90) &bull; Word &bull; PPT</div>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta">
+                <span class="project-cat">Microsoft Office Professional</span>
+                <span class="project-year">2026</span>
+              </div>
+              <h3 class="project-title">Rekapitulasi Data Harian &amp; Laporan Evaluasi Unit</h3>
+              <p class="project-desc">Pengolahan data operasional harian, verifikasi kesesuaian dokumen lapangan, dan penyusunan laporan berkala secara rapi.</p>
+              <div class="project-tags">
+                <span>Microsoft Excel (90)</span>
+                <span>PowerPoint (93)</span>
+                <span>Word (87)</span>
+              </div>
+              <button type="button" class="project-link" data-open-project="office-reporting">
+                <span>Lihat Detail</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work Experience, Education & ATS CV Download Section -->
+    <section class="section section--alt" id="pengalaman">
+      <div class="container">
+        <div class="section-header section-header--row reveal">
+          <div>
+            <span class="section-eyebrow">05 / Pengalaman Kerja, Pendidikan &amp; CV ATS</span>
+            <h2 class="section-title">Rekam jejak <span class="serif-italic">karier &amp; akademik</span>.</h2>
+          </div>
+
+          <div class="segment-switch" role="tablist" aria-label="Pilih riwayat">
+            <button type="button" class="segment-btn is-active" data-timeline="work" role="tab" aria-selected="true">Pengalaman Kerja</button>
+            <button type="button" class="segment-btn" data-timeline="edu" role="tab" aria-selected="false">Pendidikan</button>
+          </div>
+        </div>
+
+        <div class="timeline-wrapper">
+          <!-- Work Experience Timeline -->
+          <div class="timeline is-active" id="timeline-work" role="tabpanel">
+            <article class="timeline-item reveal">
+              <div class="timeline-date">2021 &ndash; Saat Ini (2026)</div>
+              <div class="timeline-body">
+                <h3>Admin Gudang &amp; Admin Pelayanan Penyambungan</h3>
+                <p class="timeline-org">PT Trica Daya (Mitra Kerja / Vendor PLN &ndash; Penempatan PLN ULP Bantar Gebang)</p>
+                <ul class="timeline-bullets">
+                  <li>Mengelola administrasi keluar-masuk barang serta pencatatan stok material gudang secara sistematis menggunakan aplikasi <strong>MIMS Warehouse</strong>.</li>
+                  <li>Mengoperasikan aplikasi <strong>PLN AP2T</strong> (Aplikasi Pelayanan Pelanggan Terpusat) untuk memproses administrasi permohonan dan pelayanan penyambungan pelanggan.</li>
+                  <li>Melakukan input, rekapitulasi, dan pengecekan data operasional harian menggunakan <strong>Microsoft Excel</strong> dengan tingkat ketelitian dan kecepatan kerja tinggi.</li>
+                  <li>Memastikan kesesuaian data administrasi pelayanan penyambungan dengan dokumen pendukung serta memantau ketersediaan material untuk kelancaran operasional lapangan.</li>
+                  <li>Menyusun laporan administrasi gudang dan laporan pelayanan penyambungan secara berkala dan rapi untuk mendukung evaluasi kerja unit.</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+
+          <!-- Education Timeline -->
+          <div class="timeline" id="timeline-edu" role="tabpanel" hidden>
+            <article class="timeline-item">
+              <div class="timeline-date">Lulusan 2026</div>
+              <div class="timeline-body">
+                <h3>S1 Sistem Informasi (S.Kom.)</h3>
+                <p class="timeline-org">Universitas Bani Saleh &middot; Bekasi</p>
+                <p>Menyelesaikan pendidikan Sarjana Sistem Informasi (Bachelor of Information System) sambil bekerja aktif sejak 2021, memadukan teori perancangan sistem &amp; basis data dengan praktik administrasi operasional.</p>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-date">2026</div>
+              <div class="timeline-body">
+                <h3>5 Sertifikasi Kompetensi Industri</h3>
+                <p class="timeline-org">Oracle Academy &bull; Cisco Networking Academy &bull; Ebiz Microsoft Partner</p>
+                <p>Memperoleh sertifikasi resmi Database Design, Java Fundamentals, Java Programming, IT Support Essentials, serta Desktop Application Training (Microsoft Office &ndash; Grade A Excellent).</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- Dedicated ATS CV Download Card -->
+        <div class="cv-banner reveal" id="cv-ats">
+          <div class="cv-banner__info">
+            <span class="mono-tag">DOKUMEN RESMI // FORMAT ATS-FRIENDLY</span>
+            <h3>Unduh Curriculum Vitae (CV ATS) Nazar Putra Hawali</h3>
+            <p>Tersedia dalam format PDF satu halaman berstruktur standar ATS (teks terseleksi, rapi, dan siap dibaca sistem rekrutmen HRD maupun dibaca langsung).</p>
+          </div>
+          <div class="cv-banner__actions">
+            <a
+              href="assets/docs/CV-ATS-Nazar-Putra-Hawali.pdf"
+              download="CV-ATS-Nazar-Putra-Hawali.pdf"
+              class="btn btn-primary"
+            >
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              <span>Download CV ATS (PDF)</span>
+            </a>
+            <a href="cv-ats.html" class="btn btn-ghost">
+              <span>Pratinjau / Cetak CV</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="kontak">
+      <div class="container contact-grid">
+        <div class="contact-info reveal">
+          <span class="section-eyebrow">06 / Kontak &amp; Kolaborasi</span>
+          <h2 class="section-title">Tertarik bekerja sama? <span class="serif-italic">Hubungi saya</span>.</h2>
+          <p class="body-text">
+            Saya siap berkontribusi untuk posisi <strong>Admin Gudang, Admin Operasional, Staff Pelayanan Pelanggan, IT Support, maupun Sistem Informasi</strong>. Hubungi saya langsung melalui telepon/WhatsApp atau email di bawah ini.
+          </p>
+
+          <div class="contact-channels">
+            <div class="channel-card">
+              <div>
+                <span class="channel-label">No. HP / WhatsApp</span>
+                <a href="tel:081386050447" class="channel-value">081386050447</a>
+              </div>
+              <button type="button" class="btn-icon" id="copyPhoneContact" data-phone="081386050447" aria-label="Salin nomor HP">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+              </button>
+            </div>
+
+            <div class="channel-card">
+              <div>
+                <span class="channel-label">Email</span>
+                <a href="mailto:nazarputrahawali2122@gmail.com" class="channel-value">nazarputrahawali2122@gmail.com</a>
+              </div>
+              <button type="button" class="btn-icon" id="copyEmailContact" data-email="nazarputrahawali2122@gmail.com" aria-label="Salin alamat email">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+              </button>
+            </div>
+
+            <div class="social-links" aria-label="Tautan cepat">
+              <a href="https://wa.me/6281386050447" target="_blank" rel="noopener noreferrer" class="social-pill">Chat WhatsApp</a>
+              <a href="assets/docs/CV-ATS-Nazar-Putra-Hawali.pdf" download="CV-ATS-Nazar-Putra-Hawali.pdf" class="social-pill">Download CV ATS</a>
+              <a href="cv-ats.html" class="social-pill">Pratinjau CV ATS</a>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Nama Lengkap</label>
+              <input type="text" id="name" name="name" placeholder="Nama Anda / Perusahaan" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Alamat Email</label>
+              <input type="email" id="email" name="email" placeholder="email@perusahaan.com" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Keperluan</label>
+            <select id="subject" name="subject">
+              <option value="Rekrutmen / Posisi Kerja">Rekrutmen / Posisi Kerja</option>
+              <option value="Admin Gudang / Pelayanan">Admin Gudang / Operasional</option>
+              <option value="IT Support & Sistem Informasi">IT Support / Sistem Informasi</option>
+              <option value="Lainnya">Diskusi Lainnya</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Pesan</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tuliskan detail posisi, perusahaan, atau jadwal wawancara..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-full">
+            <span>Kirim Pesan</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <line x1="22" y1="2" x2="11" y2="13"></line>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-copy">&copy; <span id="currentYear">2026</span> Nazar Putra Hawali, S.Kom. &mdash; 081386050447 &middot; Universitas Bani Saleh.</p>
+      <a href="#beranda" class="back-to-top" aria-label="Kembali ke atas">
+        <span>Kembali ke atas</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+      </a>
+    </div>
+  </footer>
+
+  <!-- Project Detail Modal -->
+  <div class="modal-backdrop" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal-card">
+      <button type="button" class="modal-close" id="modalClose" aria-label="Tutup detail proyek">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <span class="mono-tag" id="modalCategory">KATEGORI</span>
+      <h3 class="modal-title" id="modalTitle">Judul Proyek</h3>
+      <p class="modal-summary" id="modalSummary"></p>
+
+      <div class="modal-details">
+        <div class="modal-block">
+          <h4>Fokus &amp; Kebutuhan</h4>
+          <p id="modalChallenge"></p>
+        </div>
+        <div class="modal-block">
+          <h4>Implementasi &amp; Hasil</h4>
+          <p id="modalSolution"></p>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <div class="project-tags" id="modalTags"></div>
+        <a href="#kontak" class="btn btn-primary btn-sm" id="modalCta">Hubungi Saya</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

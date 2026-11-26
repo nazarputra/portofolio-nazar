@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV ATS — Nazar Putra Hawali, S.Kom.</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 10mm 14mm;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, 'Liberation Sans', sans-serif;
+      color: #111827;
+      background-color: #EEF2F7;
+      line-height: 1.38;
+      font-size: 9.6pt;
+    }
+
+    /* Toolbar khusus tampilan web (tidak ikut tercetak ke PDF) */
+    .ats-toolbar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background-color: #06070A;
+      color: #FACC15;
+      border-bottom: 2px solid #2563EB;
+      padding: 0.75rem 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      font-family: system-ui, -apple-system, sans-serif;
+    }
+
+    .ats-toolbar__title {
+      font-size: 0.92rem;
+      font-weight: 700;
+    }
+
+    .ats-toolbar__actions {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+    }
+
+    .ats-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.48rem 0.95rem;
+      border-radius: 999px;
+      font-size: 0.84rem;
+      font-weight: 700;
+      text-decoration: none;
+      cursor: pointer;
+      border: 1.5px solid #3B82F6;
+    }
+
+    .ats-btn--primary {
+      background-color: #2563EB;
+      color: #FACC15;
+    }
+
+    .ats-btn--ghost {
+      background-color: #0F131D;
+      color: #FACC15;
+    }
+
+    /* Kertas A4 CV ATS */
+    .cv-sheet {
+      width: min(210mm, 100% - 2rem);
+      margin: 1.5rem auto 2.5rem;
+      background-color: #FFFFFF;
+      padding: 16mm 17mm;
+      box-shadow: 0 12px 36px rgba(15, 23, 42, 0.14);
+      border-radius: 4px;
+    }
+
+    .cv-header {
+      border-bottom: 2px solid #1E3A8A;
+      padding-bottom: 6px;
+      margin-bottom: 8px;
+    }
+
+    .cv-name {
+      font-size: 17.5pt;
+      font-weight: 700;
+      color: #0F172A;
+      letter-spacing: 0.3px;
+      text-transform: uppercase;
+      line-height: 1.15;
+    }
+
+    .cv-role {
+      font-size: 10.5pt;
+      font-weight: 700;
+      color: #1D4ED8;
+      margin-top: 2px;
+      margin-bottom: 3px;
+    }
+
+    .cv-contact {
+      font-size: 9pt;
+      color: #334155;
+    }
+
+    .cv-section {
+      margin-bottom: 8px;
+    }
+
+    .cv-section:last-child {
+      margin-bottom: 0;
+    }
+
+    .cv-heading {
+      font-size: 10pt;
+      font-weight: 700;
+      color: #1E3A8A;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+      border-bottom: 1px solid #CBD5E1;
+      padding-bottom: 2px;
+      margin-bottom: 5px;
+    }
+
+    .cv-summary {
+      text-align: justify;
+      color: #1F2937;
+      font-size: 9.2pt;
+    }
+
+    .cv-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .cv-org {
+      font-weight: 700;
+      color: #0F172A;
+      font-size: 9.5pt;
+    }
+
+    .cv-period {
+      font-weight: 700;
+      color: #1D4ED8;
+      font-size: 9pt;
+      white-space: nowrap;
+    }
+
+    .cv-subrole {
+      font-weight: 700;
+      color: #1F2937;
+      font-size: 9.3pt;
+      margin-top: 1px;
+      margin-bottom: 4px;
+    }
+
+    .cv-bullets {
+      padding-left: 16px;
+      color: #1F2937;
+      font-size: 9.1pt;
+    }
+
+    .cv-bullets li {
+      margin-bottom: 2.5px;
+    }
+
+    .cv-edu-sub {
+      font-size: 9.2pt;
+      color: #1F2937;
+      margin-top: 1px;
+    }
+
+    .cv-certs {
+      font-size: 9.1pt;
+      color: #1F2937;
+    }
+
+    .cv-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 8.9pt;
+      margin-top: 2px;
+    }
+
+    .cv-table th,
+    .cv-table td {
+      border: 1px solid #CBD5E1;
+      padding: 4px 7px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .cv-table th {
+      background-color: #F1F5F9;
+      color: #0F172A;
+      font-weight: 700;
+    }
+
+    .cv-table td:first-child {
+      font-weight: 700;
+      width: 34%;
+      color: #0F172A;
+    }
+
+    @media screen and (max-width: 640px) {
+      .ats-toolbar {
+        padding: 0.75rem 1rem;
+      }
+      .ats-toolbar__actions {
+        width: 100%;
+        flex-wrap: wrap;
+      }
+      .ats-btn {
+        flex: 1 1 auto;
+        justify-content: center;
+      }
+      .cv-sheet {
+        width: calc(100% - 1rem);
+        margin: 0.75rem auto 1.5rem;
+        padding: 1.25rem 1rem;
+      }
+      .cv-name {
+        font-size: 14.5pt;
+      }
+      .cv-table {
+        display: block;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+      }
+    }
+
+    @media print {
+      body {
+        background-color: #FFFFFF;
+      }
+      .no-print {
+        display: none !important;
+      }
+      .cv-sheet {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+        border-radius: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="ats-toolbar no-print">
+    <span class="ats-toolbar__title">Pratinjau CV ATS — Nazar Putra Hawali, S.Kom.</span>
+    <div class="ats-toolbar__actions">
+      <a href="index.html" class="ats-btn ats-btn--ghost">&larr; Kembali ke Portofolio</a>
+      <a href="assets/docs/CV-ATS-Nazar-Putra-Hawali.pdf" download="CV-ATS-Nazar-Putra-Hawali.pdf" class="ats-btn ats-btn--primary">Download PDF</a>
+      <button type="button" onclick="window.print()" class="ats-btn ats-btn--ghost">Cetak</button>
+    </div>
+  </div>
+
+  <main class="cv-sheet">
+    <header class="cv-header">
+      <h1 class="cv-name">Nazar Putra Hawali, S.Kom.</h1>
+      <p class="cv-role">Admin Gudang &amp; Admin Pelayanan Penyambungan | Lulusan Sistem Informasi</p>
+      <p class="cv-contact">
+        Bekasi, Jawa Barat (Lahir: Bekasi, 21 Agustus 2001) &nbsp;|&nbsp; Telepon: 081386050447 &nbsp;|&nbsp; Email: nazarputrahawali2122@gmail.com
+      </p>
+    </header>
+
+    <section class="cv-section">
+      <h2 class="cv-heading">Profil Profesional</h2>
+      <p class="cv-summary">
+        Lulusan S1 Sistem Informasi Universitas Bani Saleh dengan pengalaman kerja sejak tahun 2021 hingga saat ini (2026) melalui PT Trica Daya (mitra kerja/vendor resmi PLN) yang ditempatkan di PLN ULP Bantar Gebang sebagai Admin Gudang dan Admin Pelayanan Penyambungan. Terampil mengoperasikan aplikasi PLN AP2T, MIMS Warehouse, serta Microsoft Excel untuk pengolahan data, administrasi persediaan material, dan dukungan layanan pelanggan. Memiliki ketelitian tinggi, pemahaman basis data &amp; pemrograman Java, serta kemampuan dukungan teknis IT (IT Support) untuk menyelesaikan tugas operasional secara akurat dan tepat waktu.
+      </p>
+    </section>
+
+    <section class="cv-section">
+      <h2 class="cv-heading">Pengalaman Kerja</h2>
+      <div class="cv-row">
+        <span class="cv-org">PT Trica Daya (Mitra Kerja / Vendor PLN &ndash; Penempatan PLN ULP Bantar Gebang)</span>
+        <span class="cv-period">2021 &ndash; Saat Ini (2026)</span>
+      </div>
+      <p class="cv-subrole">Admin Gudang &amp; Admin Pelayanan Penyambungan</p>
+      <ul class="cv-bullets">
+        <li>Mengelola administrasi keluar-masuk barang serta pencatatan stok material gudang secara sistematis menggunakan aplikasi MIMS Warehouse.</li>
+        <li>Mengoperasikan aplikasi PLN AP2T (Aplikasi Pelayanan Pelanggan Terpusat) untuk memproses administrasi permohonan dan pelayanan penyambungan pelanggan.</li>
+        <li>Melakukan input, rekapitulasi, dan pengecekan data operasional harian menggunakan Microsoft Excel dengan tingkat ketelitian dan kecepatan kerja yang tinggi.</li>
+        <li>Memastikan kesesuaian data administrasi pelayanan penyambungan dengan dokumen pendukung serta memantau ketersediaan material untuk kelancaran operasional lapangan.</li>
+        <li>Menyusun laporan administrasi gudang dan laporan pelayanan penyambungan secara berkala dan rapi untuk mendukung evaluasi kerja unit.</li>
+      </ul>
+    </section>
+
+    <section class="cv-section">
+      <h2 class="cv-heading">Pendidikan</h2>
+      <div class="cv-row">
+        <span class="cv-org">Universitas Bani Saleh &ndash; Bekasi</span>
+        <span class="cv-period">Lulusan 2026</span>
+      </div>
+      <p class="cv-edu-sub">Sarjana Komputer (S.Kom.) &ndash; Program Studi Sistem Informasi (S-1)</p>
+    </section>
+
+    <section class="cv-section">
+      <h2 class="cv-heading">Sertifikasi &amp; Pelatihan</h2>
+      <p class="cv-certs">
+        <strong>Database Design</strong> &ndash; Oracle Academy (2026) &bull;
+        <strong>Java Fundamentals</strong> &ndash; Oracle Academy (2026, No. 2026100105017) &bull;
+        <strong>Java Programming</strong> &ndash; Oracle Academy (2026, No. 2026100106014) &bull;
+        <strong>IT Support Essentials</strong> &ndash; Cisco Networking Academy / Universitas Bani Saleh (2026, ID: 6629799e-c733-4dc7-ad22-7af64fbc1996) &bull;
+        <strong>Desktop Application Training Professional Level (Microsoft Office)</strong> &ndash; Ebiz Education Enterprise / Microsoft Partner (2026, No. 26DIP00077 &ndash; Word: 87, Excel: 90, PowerPoint: 93, Mean: 90 / Grade A Excellent).
+      </p>
+    </section>
+
+    <section class="cv-section">
+      <h2 class="cv-heading">Keahlian &amp; Kompetensi</h2>
+      <table class="cv-table">
+        <thead>
+          <tr>
+            <th>Kategori</th>
+            <th>Keterangan Keahlian</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Aplikasi Operasional</td>
+            <td>PLN AP2T (Aplikasi Pelayanan Pelanggan Terpusat), MIMS Warehouse</td>
+          </tr>
+          <tr>
+            <td>Pengolahan Data &amp; Office</td>
+            <td>Microsoft Excel (Skor 90 &ndash; Input Data, Rekapitulasi, Verifikasi Data), Microsoft Word (87), Microsoft PowerPoint (93)</td>
+          </tr>
+          <tr>
+            <td>Pemrograman &amp; IT</td>
+            <td>Java Fundamentals, Java Programming (OOP), Database Design &amp; SQL, IT Support Essentials (Troubleshooting Hardware/Software &amp; Jaringan)</td>
+          </tr>
+          <tr>
+            <td>Bidang Administrasi</td>
+            <td>Administrasi Gudang &amp; Persediaan Material, Administrasi Pelayanan Penyambungan, Manajemen Dokumen &amp; Arsip</td>
+          </tr>
+          <tr>
+            <td>Kompetensi Kerja</td>
+            <td>Ketelitian Tinggi (Detail-Oriented), Kecepatan Kerja, Koordinasi Operasional Lapangan</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+</body>
+</html>
