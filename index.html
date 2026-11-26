@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portofolio & CV ATS resmi Nazar Putra Hawali, S.Kom. — Admin Gudang & Admin Pelayanan Penyambungan (PT Trica Daya / PLN ULP Bantar Gebang), Lulusan Sistem Informasi Universitas Bani Saleh." />
-  <title>Nazar Putra Hawali, S.Kom. — Portofolio &amp; CV ATS</title>
+  <meta name="description" content="Portofolio & CV ATS resmi Nazar Putra Hawali — Admin Gudang & Admin Pelayanan Penyambungan (PT Trica Daya / PLN ULP Bantar Gebang), Lulusan Sistem Informasi Universitas Bani Saleh." />
+  <title>Nazar Putra Hawali — Portofolio &amp; CV ATS</title>
 
   <!-- Anti-flash script: default tema dark (Dominan Hitam, Font Kuning, List Biru) -->
   <script>
@@ -1107,6 +1107,24 @@ button {
   place-items: center;
   border-bottom: 1.5px solid var(--border-strong);
   background: linear-gradient(135deg, rgba(37, 99, 235, 0.22), var(--bg-secondary));
+  overflow: hidden;
+}
+
+.project-thumb--photo {
+  padding: 0;
+  position: relative;
+}
+
+.project-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.project-card:hover .project-photo {
+  transform: scale(1.04);
 }
 
 .mockup-window {
@@ -1990,7 +2008,7 @@ button {
           <li><a href="#tentang" class="nav-link">Tentang</a></li>
           <li><a href="#keahlian" class="nav-link">Keahlian</a></li>
           <li><a href="#sertifikasi" class="nav-link">Sertifikasi</a></li>
-          <li><a href="#karya" class="nav-link">Karya</a></li>
+          <li><a href="#karya" class="nav-link">Proyek</a></li>
           <li><a href="#pengalaman" class="nav-link">Pengalaman &amp; CV</a></li>
           <li><a href="#kontak" class="nav-link">Kontak</a></li>
         </ul>
@@ -2005,11 +2023,11 @@ button {
           title="Ganti Tema (Dark / Light)"
         >
           <span class="theme-toggle__track" aria-hidden="true">
-            <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <svg width="17" height="17" class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
               <circle cx="12" cy="12" r="4"></circle>
               <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
             </svg>
-            <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <svg width="17" height="17" class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
               <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
             </svg>
           </span>
@@ -2021,7 +2039,7 @@ button {
           download="CV-ATS-Nazar-Putra-Hawali.pdf"
           class="btn btn-primary btn-sm hide-mobile"
         >
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
             <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
             <polyline points="7 10 12 15 17 10"></polyline>
             <line x1="12" y1="15" x2="12" y2="3"></line>
@@ -2050,7 +2068,7 @@ button {
       <a href="#tentang" class="mobile-nav__link">Tentang</a>
       <a href="#keahlian" class="mobile-nav__link">Keahlian</a>
       <a href="#sertifikasi" class="mobile-nav__link">Sertifikasi</a>
-      <a href="#karya" class="mobile-nav__link">Karya</a>
+      <a href="#karya" class="mobile-nav__link">Proyek</a>
       <a href="#pengalaman" class="mobile-nav__link">Pengalaman &amp; CV</a>
       <a href="#kontak" class="mobile-nav__link">Kontak</a>
       <a href="CV-ATS-Nazar-Putra-Hawali.pdf" download="CV-ATS-Nazar-Putra-Hawali.pdf" class="btn btn-primary mobile-nav__cta">Download CV ATS (PDF)</a>
@@ -2064,15 +2082,15 @@ button {
         <div class="hero-content">
           <div class="availability-pill reveal">
             <span class="pulse-dot" aria-hidden="true"></span>
-            <span>Admin Gudang &amp; Pelayanan Penyambungan &middot; S1 Sistem Informasi</span>
+            <span>Admin Gudang &amp; Pelayanan Penyambungan &middot; Sistem Informasi</span>
           </div>
 
           <h1 class="hero-title reveal">
-            Nazar Putra Hawali, <span class="serif-italic">S.Kom.</span>
+            Nazar Putra <span class="serif-italic">Hawali</span>
           </h1>
 
           <p class="hero-subtitle reveal">
-            Lulusan <strong>Universitas Bani Saleh</strong> dengan pengalaman kerja sejak <strong>2021&ndash;2026</strong> melalui <strong>PT Trica Daya</strong> (mitra kerja/vendor resmi PLN) di <strong>PLN ULP Bantar Gebang</strong>. Terampil mengoperasikan <em>PLN AP2T</em>, <em>MIMS Warehouse</em>, <em>Microsoft Excel</em>, serta bersertifikat <em>Oracle Academy (Database &amp; Java)</em> dan <em>Cisco IT Support</em>.
+            Lulusan <strong>Universitas Bani Saleh</strong> dengan pengalaman kerja sejak <strong>2021&ndash;2026</strong> melalui <strong>PT Trica Daya</strong> (mitra kerja/vendor resmi PLN) di <strong>PLN ULP Bantar Gebang</strong>. Terampil mengoperasikan <em>PLN AP2T</em>, <em>MIMS Warehouse</em>, <em>Microsoft Excel</em>, <em>Power BI</em>, serta membangun aplikasi berbasis web.
           </p>
 
           <div class="biodata-strip reveal">
@@ -2096,7 +2114,7 @@ button {
               download="CV-ATS-Nazar-Putra-Hawali.pdf"
               class="btn btn-primary"
             >
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                 <polyline points="7 10 12 15 17 10"></polyline>
                 <line x1="12" y1="15" x2="12" y2="3"></line>
@@ -2105,7 +2123,7 @@ button {
             </a>
 
             <a href="cv-ats.html" class="btn btn-ghost">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
                 <polyline points="14 2 14 8 20 8"></polyline>
                 <line x1="16" y1="13" x2="8" y2="13"></line>
@@ -2115,7 +2133,7 @@ button {
             </a>
 
             <button type="button" class="btn btn-ghost" id="copyPhoneHero" data-phone="081386050447">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
               </svg>
               <span>Salin No. HP</span>
@@ -2144,9 +2162,9 @@ button {
         <aside class="hero-card-wrap reveal" aria-label="Kartu Profil Nazar Putra Hawali">
           <div class="profile-card">
             <div class="profile-card__header">
-              <span class="mono-tag">PROFIL // S.KOM.</span>
+              <span class="mono-tag">PROFIL // SISTEM INFORMASI</span>
               <span class="location-tag">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
                   <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                   <circle cx="12" cy="10" r="3"></circle>
                 </svg>
@@ -2169,7 +2187,7 @@ button {
                 <p class="profile-focus">PLN ULP Bantar Gebang &middot; PT Trica Daya</p>
               </div>
               <a href="#kontak" class="profile-arrow" aria-label="Hubungi Nazar Putra Hawali">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                   <line x1="7" y1="17" x2="17" y2="7"></line>
                   <polyline points="7 7 17 7 17 17"></polyline>
                 </svg>
@@ -2191,16 +2209,16 @@ button {
         <div class="about-grid">
           <div class="about-narrative reveal">
             <p class="lead-text">
-              Saya <strong>Nazar Putra Hawali, S.Kom.</strong>, lahir di Bekasi pada <strong>21 Agustus 2001</strong>, lulusan <strong>Universitas Bani Saleh</strong> program studi Sistem Informasi (2026).
+              Saya <strong>Nazar Putra Hawali</strong>, lahir di Bekasi pada <strong>21 Agustus 2001</strong>, lulusan <strong>Universitas Bani Saleh</strong> program studi Sistem Informasi (2026).
             </p>
             <p class="body-text">
-              Sejak tahun <strong>2021 hingga saat ini (2026)</strong>, saya dipercaya bertugas melalui <strong>PT Trica Daya</strong> (mitra kerja/vendor resmi PLN) dengan penempatan di <strong>PLN ULP Bantar Gebang</strong> sebagai <em>Admin Gudang &amp; Admin Pelayanan Penyambungan</em>. Selain menguasai aplikasi operasional <strong>PLN AP2T</strong> dan <strong>MIMS Warehouse</strong>, saya memiliki 5 sertifikasi kompetensi di bidang <strong>Database Design, Java, IT Support, dan Microsoft Office (Grade A)</strong>.
+              Sejak tahun <strong>2021 hingga saat ini (2026)</strong>, saya dipercaya bertugas melalui <strong>PT Trica Daya</strong> (mitra kerja/vendor resmi PLN) dengan penempatan di <strong>PLN ULP Bantar Gebang</strong> sebagai <em>Admin Gudang &amp; Admin Pelayanan Penyambungan</em>. Selain menguasai aplikasi <strong>PLN AP2T</strong> dan <strong>MIMS Warehouse</strong>, saya aktif membangun proyek analitik <strong>Power BI</strong> serta aplikasi web (pemesanan tiket bus dan aplikasi UMKM Toko Bolen).
             </p>
 
             <div class="biodata-box">
               <div class="biodata-row">
                 <span>Nama Lengkap</span>
-                <strong>Nazar Putra Hawali, S.Kom.</strong>
+                <strong>Nazar Putra Hawali</strong>
               </div>
               <div class="biodata-row">
                 <span>Tempat / Tgl Lahir</span>
@@ -2229,13 +2247,13 @@ button {
             <figure class="grad-card">
               <img
                 src="graduation.jpg"
-                alt="Wisuda Nazar Putra Hawali S.Kom. Universitas Bani Saleh di Bekasi Convention Center"
+                alt="Wisuda Nazar Putra Hawali Universitas Bani Saleh di Bekasi Convention Center"
                 class="grad-photo"
                 loading="lazy"
               />
               <figcaption class="grad-caption">
                 <span class="mono-tag">WISUDA // CLASS OF 2026</span>
-                <p>Bachelor of Information System &mdash; Bekasi Convention Center</p>
+                <p>Program Studi Sistem Informasi &mdash; Bekasi Convention Center</p>
               </figcaption>
             </figure>
           </div>
@@ -2271,32 +2289,32 @@ button {
           <div class="skill-group reveal">
             <div class="skill-group__head">
               <span class="mono-index">02</span>
-              <h3>Microsoft Office &amp; Pengolahan Data</h3>
+              <h3>Analitik Data, Power BI &amp; Office</h3>
             </div>
-            <p class="skill-group__desc">Tersertifikasi Microsoft Partner (Grade A Excellent, rata-rata 90) untuk input dan verifikasi data cepat.</p>
+            <p class="skill-group__desc">Visualisasi data interaktif Power BI dan Microsoft Office Professional (Grade A, rata-rata 90).</p>
             <div class="skill-chips">
+              <span class="chip">Microsoft Power BI</span>
               <span class="chip">Microsoft Excel 2016 (90)</span>
               <span class="chip">Microsoft Word 2016 (87)</span>
               <span class="chip">Microsoft PowerPoint 2016 (93)</span>
               <span class="chip">Input &amp; Rekapitulasi Data</span>
               <span class="chip">Verifikasi Data Operasional</span>
-              <span class="chip">Laporan Berkala Unit</span>
             </div>
           </div>
 
           <div class="skill-group reveal">
             <div class="skill-group__head">
               <span class="mono-index">03</span>
-              <h3>Pemrograman, Database &amp; IT Support</h3>
+              <h3>Pengembangan Web, Java &amp; IT Support</h3>
             </div>
-            <p class="skill-group__desc">Fondasi akademis Sistem Informasi dengan sertifikasi Oracle Academy dan Cisco Networking Academy.</p>
+            <p class="skill-group__desc">Pembuatan aplikasi web fungsional dengan sertifikasi Oracle Academy dan Cisco Networking Academy.</p>
             <div class="skill-chips">
+              <span class="chip">Aplikasi Web (HTML/CSS/JS)</span>
               <span class="chip">Database Design (Oracle)</span>
               <span class="chip">Java Fundamentals</span>
               <span class="chip">Java Programming (OOP)</span>
               <span class="chip">IT Support Essentials (Cisco)</span>
               <span class="chip">Troubleshooting Hardware &amp; OS</span>
-              <span class="chip">HTML5 / CSS3 / SQL</span>
             </div>
           </div>
         </div>
@@ -2380,26 +2398,113 @@ button {
       </div>
     </section>
 
-    <!-- Featured Projects / Operational Highlights Section -->
+    <!-- Featured Projects Section -->
     <section class="section" id="karya">
       <div class="container">
         <div class="section-header section-header--row reveal">
           <div>
-            <span class="section-eyebrow">04 / Karya &amp; Pengalaman Operasional</span>
-            <h2 class="section-title">Penerapan keahlian di dunia <span class="serif-italic">kerja &amp; akademik</span>.</h2>
+            <span class="section-eyebrow">04 / Proyek &amp; Karya Pilihan</span>
+            <h2 class="section-title">Proyek nyata yang pernah saya <span class="serif-italic">kerjakan</span>.</h2>
           </div>
 
-          <div class="filter-tabs" role="tablist" aria-label="Filter kategori karya">
+          <div class="filter-tabs" role="tablist" aria-label="Filter kategori proyek">
             <button type="button" class="filter-btn is-active" data-filter="all" role="tab" aria-selected="true">Semua</button>
+            <button type="button" class="filter-btn" data-filter="bi" role="tab" aria-selected="false">Power BI</button>
+            <button type="button" class="filter-btn" data-filter="web" role="tab" aria-selected="false">Aplikasi Web</button>
             <button type="button" class="filter-btn" data-filter="pln" role="tab" aria-selected="false">Operasional PLN</button>
-            <button type="button" class="filter-btn" data-filter="java" role="tab" aria-selected="false">Java &amp; Database</button>
-            <button type="button" class="filter-btn" data-filter="support" role="tab" aria-selected="false">IT &amp; Office</button>
           </div>
         </div>
 
         <div class="projects-grid" id="projectsGrid">
-          <!-- Item 1 -->
-          <article class="project-card reveal" data-category="pln support" data-project-id="pln-warehouse">
+          <!-- Project 1: Power BI -->
+          <article class="project-card reveal" data-category="bi" data-project-id="powerbi-smoking">
+            <div class="project-thumb project-thumb--photo">
+              <img
+                src="project-powerbi.jpg"
+                alt="Presentasi Dashboard Power BI Persentase Merokok Umur 15+ Tahun 2021-2024"
+                class="project-photo"
+                loading="lazy"
+              />
+            </div>
+            <div class="project-info">
+              <div class="project-meta">
+                <span class="project-cat">Microsoft Power BI &middot; Data Analytics</span>
+                <span class="project-year">2021&ndash;2024</span>
+              </div>
+              <h3 class="project-title">Dashboard Power BI Persentase Merokok Umur 15+ Tahun</h3>
+              <p class="project-desc">Visualisasi interaktif tren angka penduduk merokok usia 15 tahun ke atas tahun 2021&ndash;2024 per provinsi di Jawa dengan KPI dan slicer dinamis.</p>
+              <div class="project-tags">
+                <span>Power BI</span>
+                <span>Data Analytics</span>
+                <span>2021&ndash;2024</span>
+              </div>
+              <button type="button" class="project-link" data-open-project="powerbi-smoking">
+                <span>Lihat Detail</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- Project 2: Tiket Bus Web App -->
+          <article class="project-card reveal" data-category="web" data-project-id="tiket-bus-web">
+            <div class="project-thumb project-thumb--photo">
+              <img
+                src="project-tiket-bus.jpg"
+                alt="Presentasi Aplikasi Pemesanan Tiket Bus Berbasis Web"
+                class="project-photo"
+                loading="lazy"
+              />
+            </div>
+            <div class="project-info">
+              <div class="project-meta">
+                <span class="project-cat">Aplikasi Web &middot; Transportasi</span>
+                <span class="project-year">Web App</span>
+              </div>
+              <h3 class="project-title">Aplikasi Pemesanan Tiket Bus Berbasis Web</h3>
+              <p class="project-desc">Sistem pemesanan tiket bus daring untuk memudahkan masyarakat mencari, memilih rute, dan memesan tiket secara cepat tanpa datang ke terminal.</p>
+              <div class="project-tags">
+                <span>Web App</span>
+                <span>Sistem Informasi</span>
+                <span>Booking Tiket</span>
+              </div>
+              <button type="button" class="project-link" data-open-project="tiket-bus-web">
+                <span>Lihat Detail</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- Project 3: UMKM Toko Bolen -->
+          <article class="project-card reveal" data-category="web" data-project-id="umkm-bolen">
+            <div class="project-thumb project-thumb--photo">
+              <img
+                src="project-bolen.jpg"
+                alt="Presentasi Aplikasi UMKM Toko Bolen Zartih"
+                class="project-photo"
+                loading="lazy"
+              />
+            </div>
+            <div class="project-info">
+              <div class="project-meta">
+                <span class="project-cat">Aplikasi UMKM &middot; Toko Bolen</span>
+                <span class="project-year">UMKM</span>
+              </div>
+              <h3 class="project-title">Aplikasi UMKM Toko Bolen (Bolen Zartih)</h3>
+              <p class="project-desc">Aplikasi katalog produk dan pemesanan digital untuk UMKM Toko Bolen Zartih guna mempermudah promosi produk serta pencatatan order pelanggan.</p>
+              <div class="project-tags">
+                <span>Aplikasi UMKM</span>
+                <span>Katalog Digital</span>
+                <span>Web App</span>
+              </div>
+              <button type="button" class="project-link" data-open-project="umkm-bolen">
+                <span>Lihat Detail</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- Project 4: PLN AP2T & MIMS Warehouse -->
+          <article class="project-card reveal" data-category="pln" data-project-id="pln-warehouse">
             <div class="project-thumb" aria-hidden="true">
               <div class="mockup-window">
                 <div class="mockup-dots"><span></span><span></span><span></span></div>
@@ -2432,101 +2537,7 @@ button {
               </div>
               <button type="button" class="project-link" data-open-project="pln-warehouse">
                 <span>Lihat Detail</span>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </button>
-            </div>
-          </article>
-
-          <!-- Item 2 -->
-          <article class="project-card reveal" data-category="java" data-project-id="java-inventory">
-            <div class="project-thumb" aria-hidden="true">
-              <div class="mockup-editorial">
-                <div class="editorial-pill">JAVA &amp; ORACLE DB</div>
-                <div class="editorial-headline"></div>
-                <div class="editorial-cards">
-                  <div></div>
-                  <div></div>
-                </div>
-              </div>
-            </div>
-            <div class="project-info">
-              <div class="project-meta">
-                <span class="project-cat">Java Programming &amp; Database</span>
-                <span class="project-year">2026</span>
-              </div>
-              <h3 class="project-title">Sistem Pencatatan Inventaris Berbasis Java &amp; SQL</h3>
-              <p class="project-desc">Implementasi konsep OOP Java dan desain basis data relasional (Oracle Database Design) untuk validasi stok dan transaksi.</p>
-              <div class="project-tags">
-                <span>Java OOP</span>
-                <span>Database Design</span>
-                <span>SQL</span>
-              </div>
-              <button type="button" class="project-link" data-open-project="java-inventory">
-                <span>Lihat Detail</span>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </button>
-            </div>
-          </article>
-
-          <!-- Item 3 -->
-          <article class="project-card reveal" data-category="support" data-project-id="it-helpdesk">
-            <div class="project-thumb" aria-hidden="true">
-              <div class="mockup-lms">
-                <div class="lms-sidebar">
-                  <span></span><span></span><span></span>
-                </div>
-                <div class="lms-main">
-                  <div class="lms-video"></div>
-                  <div class="lms-progress"><div></div></div>
-                </div>
-              </div>
-            </div>
-            <div class="project-info">
-              <div class="project-meta">
-                <span class="project-cat">IT Support &amp; Helpdesk</span>
-                <span class="project-year">2026</span>
-              </div>
-              <h3 class="project-title">Standarisasi SOP &amp; Troubleshooting IT Support</h3>
-              <p class="project-desc">Alur diagnosis perangkat keras, sistem operasi, jaringan lokal, serta dokumentasi penanganan insiden teknis berbasis standar Cisco.</p>
-              <div class="project-tags">
-                <span>IT Support Essentials</span>
-                <span>Cisco</span>
-                <span>Hardware/OS</span>
-              </div>
-              <button type="button" class="project-link" data-open-project="it-helpdesk">
-                <span>Lihat Detail</span>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </button>
-            </div>
-          </article>
-
-          <!-- Item 4 -->
-          <article class="project-card reveal" data-category="pln support" data-project-id="office-reporting">
-            <div class="project-thumb" aria-hidden="true">
-              <div class="mockup-tokens">
-                <div class="token-row">
-                  <span class="swatch s1"></span>
-                  <span class="swatch s2"></span>
-                  <span class="swatch s3"></span>
-                </div>
-                <div class="token-btn">Excel (90) &bull; Word &bull; PPT</div>
-              </div>
-            </div>
-            <div class="project-info">
-              <div class="project-meta">
-                <span class="project-cat">Microsoft Office Professional</span>
-                <span class="project-year">2026</span>
-              </div>
-              <h3 class="project-title">Rekapitulasi Data Harian &amp; Laporan Evaluasi Unit</h3>
-              <p class="project-desc">Pengolahan data operasional harian, verifikasi kesesuaian dokumen lapangan, dan penyusunan laporan berkala secara rapi.</p>
-              <div class="project-tags">
-                <span>Microsoft Excel (90)</span>
-                <span>PowerPoint (93)</span>
-                <span>Word (87)</span>
-              </div>
-              <button type="button" class="project-link" data-open-project="office-reporting">
-                <span>Lihat Detail</span>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
               </button>
             </div>
           </article>
@@ -2573,9 +2584,9 @@ button {
             <article class="timeline-item">
               <div class="timeline-date">Lulusan 2026</div>
               <div class="timeline-body">
-                <h3>S1 Sistem Informasi (S.Kom.)</h3>
+                <h3>S1 Sistem Informasi</h3>
                 <p class="timeline-org">Universitas Bani Saleh &middot; Bekasi</p>
-                <p>Menyelesaikan pendidikan Sarjana Sistem Informasi (Bachelor of Information System) sambil bekerja aktif sejak 2021, memadukan teori perancangan sistem &amp; basis data dengan praktik administrasi operasional.</p>
+                <p>Menyelesaikan pendidikan Program Studi Sistem Informasi sambil bekerja aktif sejak 2021, menghasilkan berbagai proyek nyata termasuk Dashboard Power BI, Aplikasi Tiket Bus Web, dan Aplikasi UMKM Toko Bolen.</p>
               </div>
             </article>
 
@@ -2603,7 +2614,7 @@ button {
               download="CV-ATS-Nazar-Putra-Hawali.pdf"
               class="btn btn-primary"
             >
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                 <polyline points="7 10 12 15 17 10"></polyline>
                 <line x1="12" y1="15" x2="12" y2="3"></line>
@@ -2625,7 +2636,7 @@ button {
           <span class="section-eyebrow">06 / Kontak &amp; Kolaborasi</span>
           <h2 class="section-title">Tertarik bekerja sama? <span class="serif-italic">Hubungi saya</span>.</h2>
           <p class="body-text">
-            Saya siap berkontribusi untuk posisi <strong>Admin Gudang, Admin Operasional, Staff Pelayanan Pelanggan, IT Support, maupun Sistem Informasi</strong>. Hubungi saya langsung melalui telepon/WhatsApp atau email di bawah ini.
+            Saya siap berkontribusi untuk posisi <strong>Admin Gudang, Admin Operasional, Staff Pelayanan Pelanggan, Data/BI Analyst, IT Support, maupun Sistem Informasi</strong>. Hubungi saya langsung melalui telepon/WhatsApp atau email di bawah ini.
           </p>
 
           <div class="contact-channels">
@@ -2635,7 +2646,7 @@ button {
                 <a href="tel:081386050447" class="channel-value">081386050447</a>
               </div>
               <button type="button" class="btn-icon" id="copyPhoneContact" data-phone="081386050447" aria-label="Salin nomor HP">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
                   <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
                   <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
                 </svg>
@@ -2648,7 +2659,7 @@ button {
                 <a href="mailto:nazarputrahawali2122@gmail.com" class="channel-value">nazarputrahawali2122@gmail.com</a>
               </div>
               <button type="button" class="btn-icon" id="copyEmailContact" data-email="nazarputrahawali2122@gmail.com" aria-label="Salin alamat email">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
                   <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
                   <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
                 </svg>
@@ -2680,7 +2691,7 @@ button {
             <select id="subject" name="subject">
               <option value="Rekrutmen / Posisi Kerja">Rekrutmen / Posisi Kerja</option>
               <option value="Admin Gudang / Pelayanan">Admin Gudang / Operasional</option>
-              <option value="IT Support & Sistem Informasi">IT Support / Sistem Informasi</option>
+              <option value="Power BI & Aplikasi Web">Proyek Power BI / Aplikasi Web</option>
               <option value="Lainnya">Diskusi Lainnya</option>
             </select>
           </div>
@@ -2692,7 +2703,7 @@ button {
 
           <button type="submit" class="btn btn-primary btn-full">
             <span>Kirim Pesan</span>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
               <line x1="22" y1="2" x2="11" y2="13"></line>
               <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
             </svg>
@@ -2705,10 +2716,10 @@ button {
   <!-- Footer -->
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p class="footer-copy">&copy; <span id="currentYear">2026</span> Nazar Putra Hawali, S.Kom. &mdash; 081386050447 &middot; Universitas Bani Saleh.</p>
+      <p class="footer-copy">&copy; <span id="currentYear">2026</span> Nazar Putra Hawali &mdash; 081386050447 &middot; Universitas Bani Saleh.</p>
       <a href="#beranda" class="back-to-top" aria-label="Kembali ke atas">
         <span>Kembali ke atas</span>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
           <polyline points="18 15 12 9 6 15"></polyline>
         </svg>
       </a>
@@ -2719,7 +2730,7 @@ button {
   <div class="modal-backdrop" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
     <div class="modal-card">
       <button type="button" class="modal-close" id="modalClose" aria-label="Tutup detail proyek">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <line x1="18" y1="6" x2="6" y2="18"></line>
           <line x1="6" y1="6" x2="18" y2="18"></line>
         </svg>
@@ -2757,9 +2768,33 @@ button {
   const root = document.documentElement;
 
   /* --------------------------------------------------------------------------
-     1. Data Detail Karya & Pengalaman Nazar Putra Hawali
+     1. Data Detail Proyek & Pengalaman Nazar Putra Hawali
      -------------------------------------------------------------------------- */
   const PROJECTS_DATA = {
+    'powerbi-smoking': {
+      category: 'Business Intelligence · Microsoft Power BI',
+      title: 'Dashboard Power BI — Persentase Merokok Umur 15+ Tahun (2021–2024)',
+      summary: 'Proyek analitik dan visualisasi data interaktif menggunakan Microsoft Power BI untuk memetakan tren persentase penduduk merokok usia 15 tahun ke atas pada periode 2021–2024.',
+      challenge: 'Data tahunan per provinsi (2021: 170,19; 2022: 165,73; 2023: 166,92; 2024: 169,88) dalam tabel mentah sulit dibandingkan tren perubahannya secara cepat.',
+      solution: 'Membangun dashboard multi-halaman di Power BI lengkap dengan KPI card total per tahun, slicer interaktif Provinsi & Tahun, serta diagram pie dan bar perbandingan provinsi di Pulau Jawa.',
+      tags: ['Microsoft Power BI', 'Data Analytics', 'Visualisasi Data', '2021–2024']
+    },
+    'tiket-bus-web': {
+      category: 'Web Application · Sistem Informasi',
+      title: 'Aplikasi Pemesanan Tiket Bus Berbasis Web',
+      summary: 'Aplikasi web pemesanan tiket bus yang dirancang untuk memudahkan masyarakat dalam mencari jadwal, memilih kursi, dan memesan tiket bus secara cepat, aman, dan efisien.',
+      challenge: 'Calon penumpang sebelumnya harus datang langsung ke terminal atau agen hanya untuk mengecek ketersediaan rute dan memesan tiket.',
+      solution: 'Mengembangkan antarmuka pemesanan tiket bus berbasis web yang responsif sehingga pengguna dapat mengakses layanan pencarian rute dan pemesanan kapan saja dari perangkat mereka.',
+      tags: ['Web App', 'HTML / CSS / JS', 'Sistem Pemesanan', 'UI/UX']
+    },
+    'umkm-bolen': {
+      category: 'Aplikasi UMKM · E-Commerce Web',
+      title: 'Aplikasi UMKM Toko Bolen (Bolen Zartih)',
+      summary: 'Pengembangan aplikasi digital untuk mendukung operasional dan pemasaran UMKM Toko Bolen Zartih agar pelanggan lebih mudah melihat katalog varian rasa dan melakukan pemesanan.',
+      challenge: 'Pencatatan pesanan toko bolen masih dilakukan secara manual lewat pesan singkat sehingga menyulitkan rekapitulasi produk terlaris dan stok harian.',
+      solution: 'Merancang aplikasi UMKM dengan tampilan katalog produk yang menarik, pencatatan pesanan terstruktur, serta ringkasan data penjualan untuk pemilik usaha.',
+      tags: ['Aplikasi UMKM', 'Katalog Produk', 'Web App', 'Manajemen Order']
+    },
     'pln-warehouse': {
       category: 'Operasional PLN · MIMS Warehouse & AP2T',
       title: 'Administrasi Gudang & Pelayanan Penyambungan PLN',
@@ -2767,30 +2802,6 @@ button {
       challenge: 'Menjaga akurasi stok material keluar-masuk sekaligus memastikan setiap permohonan penyambungan pelanggan terproses sesuai dokumen pendukung tanpa keterlambatan.',
       solution: 'Mengoperasikan aplikasi MIMS Warehouse untuk pencatatan stok sistematis, memproses permohonan di PLN AP2T secara akurat, serta menyusun laporan berkala yang rapi bagi unit.',
       tags: ['PLN AP2T', 'MIMS Warehouse', 'Microsoft Excel', '2021–2026']
-    },
-    'java-inventory': {
-      category: 'Java Programming & Oracle Database',
-      title: 'Sistem Pencatatan Inventaris Berbasis Java & SQL',
-      summary: 'Aplikasi pencatatan stok barang masuk dan keluar yang dibangun menggunakan prinsip Object-Oriented Programming (Java) dan perancangan basis data relasional.',
-      challenge: 'Proses pencatatan barang manual rentan terjadi duplikasi kode barang dan selisih perhitungan stok harian.',
-      solution: 'Menerapkan struktur class modular dari sertifikasi Java Fundamentals & Java Programming serta rancangan tabel normalisasi dari Oracle Database Design.',
-      tags: ['Java OOP', 'Database Design', 'Oracle Academy', 'SQL']
-    },
-    'it-helpdesk': {
-      category: 'IT Support & Helpdesk',
-      title: 'Standarisasi SOP & Troubleshooting IT Support',
-      summary: 'Panduan operasional standar penanganan kendala perangkat keras, sistem operasi, jaringan dasar, dan pencatatan tiket insiden teknis.',
-      challenge: 'Waktu penyelesaian gangguan perangkat pengguna memakan waktu lama tanpa alur diagnosis yang seragam.',
-      solution: 'Mengimplementasikan langkah diagnosis terstruktur sesuai standar Cisco IT Support Essentials beserta log riwayat pemeliharaan perangkat.',
-      tags: ['IT Support Essentials', 'Cisco', 'Troubleshooting', 'Jaringan']
-    },
-    'office-reporting': {
-      category: 'Microsoft Office Professional',
-      title: 'Rekapitulasi Data Harian & Laporan Evaluasi Unit',
-      summary: 'Template pengolahan data operasional harian dan pelaporan manajemen menggunakan Microsoft Excel, Word, dan PowerPoint tingkat profesional.',
-      challenge: 'Rekapitulasi data harian membutuhkan ketelitian tinggi dan kecepatan penyusunan laporan evaluasi unit secara berkala.',
-      solution: 'Memanfaatkan formula dan verifikasi data Microsoft Excel (skor kompetensi 90), format dokumentasi Word (87), serta visualisasi laporan PowerPoint (93) dengan predikat Grade A.',
-      tags: ['Excel (90)', 'PowerPoint (93)', 'Word (87)', 'Grade A (Excellent)']
     }
   };
 
@@ -2817,7 +2828,7 @@ button {
     if (persist) {
       try {
         localStorage.setItem(STORAGE_KEY, theme);
-      } catch (err) { }
+      } catch (err) {}
     }
   }
 
