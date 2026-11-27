@@ -10,6 +10,8 @@ Website portofolio responsif dengan dukungan **Mode Dark & Light** (tema utama H
 - `project-powerbi.jpg` — Dokumentasi proyek Dashboard Power BI (Persentase Merokok 2021–2024)
 - `project-tiket-bus.jpg` — Dokumentasi proyek Aplikasi Pemesanan Tiket Bus Berbasis Web
 - `project-bolen.jpg` — Dokumentasi proyek Aplikasi UMKM Toko Bolen (Bolen Zartih)
+- `project-arcgis.jpg` — Dokumentasi Monitoring Tikor ArcGIS pelaksanaan pemasangan di lapangan
+- `favicon.svg` — Logo N website
 - `CV-ATS-Nazar-Putra-Hawali.pdf` — Dokumen CV ATS 1 halaman A4
 - `vercel.json` — Konfigurasi deployment statis Vercel
 
@@ -25,6 +27,8 @@ Website portofolio responsif dengan dukungan **Mode Dark & Light** (tema utama H
    - `project-powerbi.jpg`
    - `project-tiket-bus.jpg`
    - `project-bolen.jpg`
+   - `project-arcgis.jpg`
+   - `favicon.svg`
    - `CV-ATS-Nazar-Putra-Hawali.pdf`
    - `vercel.json`
    - `README.md`
